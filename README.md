@@ -1,2 +1,2 @@
-# go-it-fecourse
+# goit-js-hw-01
 js
