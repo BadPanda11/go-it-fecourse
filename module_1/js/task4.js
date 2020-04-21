@@ -7,17 +7,17 @@ let totalPrice;
 
 if (input === null) {
   message = 'Отменено пользователем';
-  console.log(message);
 } else {
   totalPrice = input * pricePerDroid;
 
   if (totalPrice > credits) {
-    console.log('Недостаточно средств на счету!');
+    message('Недостаточно средств на счету!');
   } else {
     message = `Вы купили ${input} дроидов, на счету осталось ${
       credits - totalPrice
     } кредитов.`;
-    console.log(message);
-    alert(message);
   }
 }
+console.log(message);
+
+alert(message);
